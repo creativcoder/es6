@@ -73,12 +73,11 @@ class Sort_machine {
 				let pivot_val = arr[pivot_idx];
 				swap(pivot_idx,low);
 				let border = low;
-				for(let i=low;i<high+1;i++) {
+				for(let i=low;i<high+1;i++) 
 					if (arr[i] < pivot_val) {
 						border += 1;
 						swap(i,border);
 					}
-				}
 				swap(low,border);
 			return border;
 			};
